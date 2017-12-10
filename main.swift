@@ -385,7 +385,7 @@ do {
     }
     
     performCommand(description: "Making a local clone of the SwiftPlate repo") {
-        let repositoryURL = arguments.repositoryURL ?? URL(string: "https://github.com/JohnSundell/SwiftPlate.git")!
+        let repositoryURL = arguments.repositoryURL ?? URL(string: "https://github.com/AmityApp/SwiftPlate.git")!
         Process().launchBash(withCommand: "git clone \(repositoryURL.absoluteString) '\(gitClonePath)' -q")
     }
     
